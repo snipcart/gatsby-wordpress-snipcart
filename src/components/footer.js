@@ -1,13 +1,6 @@
-require("dotenv").config()
-require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
-
 import * as React from "react"
 import {
   Twitter,
-  Twitch,
-  Instagram,
   Facebook,
   Youtube,
   GitHub,
@@ -45,11 +38,6 @@ const socialMedia = {
     url: "https://github.com",
     name: "GitHub",
     icon: <GitHub />,
-  },
-  TWITCH: {
-    url: "https://twitch.tv",
-    name: "Twitch",
-    icon: <Twitch />,
   },
 }
 
