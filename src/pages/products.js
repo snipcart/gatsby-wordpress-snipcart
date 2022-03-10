@@ -9,29 +9,30 @@ const Fallback = (props) => {
   return false
 }
 
-export default function Shop(props) {
-  const { product } = props.data
+export default function Products(props) {
+  const { products } = props.data
 
   return (
-    <Layout {...Shop}>
-      {ShopItem.blocks.map((block, i) => {
-        const Component = sections[block.blocktype] || Fallback
-        return <Component key={block.id} index={i} {...block} />
+    <Layout>
+      {products.nodes.forEach(product => {
+        return <button class="snipcart-add-item" data-id={product.id}>Add to cart</button>
       })}
     </Layout>
   )
 }
 
 export const query = graphql`
-  shopItem {
-      id
-      name
-      image {
-        id
-        url
+  {
+    products: allWpPost {
+      nodes {
+        product {
+          description
+          id
+          name
+          price
+          fieldGroupName
+        }
       }
-      description
-      price
     }
   }
 `
