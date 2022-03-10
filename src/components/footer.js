@@ -26,11 +26,6 @@ const socialMedia = {
     name: "Twitter",
     icon: <Twitter />,
   },
-  INSTAGRAM: {
-    url: "https://instagram.com",
-    name: "Instagram",
-    icon: <Instagram />,
-  },
   FACEBOOK: {
     url: "https://facebook.com",
     name: "Facebook",
@@ -74,61 +69,26 @@ const data = {
       href: "#!",
       text: "Products",
     },
-    {
-      id: 1,
-      href: "#!",
-      text: "Pricing",
-    },
-    {
-      id: 2,
-      href: "#!",
-      text: "About",
-    },
-    {
-      id: 3,
-      href: "#!",
-      text: "Blog",
-    },
-  ],
-  meta: [
-    {
-      id: 0,
-      href: "/terms",
-      text: "Terms",
-    },
-    {
-      id: 1,
-      href: "/privacy",
-      text: "Privacy Policy",
-    },
   ],
   socialLinks: [
     {
       service: "TWITTER",
-      username: "gatsbyjs",
-    },
-    {
-      service: "INSTAGRAM",
-      username: "gatsbyjs",
+      username: "snipcart",
     },
     {
       service: "GITHUB",
-      username: "gatsbyjs",
+      username: "snipcart",
     },
     {
       service: "FACEBOOK",
-      username: "gatsbyjs",
+      username: "snipcart",
     },
     {
       service: "YOUTUBE",
-      username: "gatsbyjs",
-    },
-    {
-      service: "TWITCH",
-      username: "gatsbyjs",
+      username: "snipcart",
     },
   ],
-  copyright: "© 2022 Gatsby Inc. All rights reserved",
+  copyright: "© 2022 Snipcart. All rights reserved",
 }
 
 export default function Footer(props) {

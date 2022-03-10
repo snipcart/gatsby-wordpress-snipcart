@@ -25,26 +25,8 @@ const data = {
     {
       id: 0,
       navItemType: "Link",
-      href: "#!",
+      href: "/products",
       text: "Products",
-    },
-    {
-      id: 1,
-      navItemType: "Link",
-      href: "#!",
-      text: "Pricing",
-    },
-    {
-      id: 2,
-      navItemType: "Link",
-      href: "#!",
-      text: "About",
-    },
-    {
-      id: 3,
-      navItemType: "Link",
-      href: "#!",
-      text: "Blog",
     },
   ],
   cta: {
