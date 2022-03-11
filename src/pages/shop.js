@@ -12,14 +12,8 @@ export default function Products(props) {
       {products.nodes.map(({ product }) => {
         return <Product key={product.id} {...product} />
       })}
-      {/* {products.nodes.forEach(product => {
-        return <button class="snipcart-add-item" data-id={product.id}>Add to cart</button>
-      })} */}
     </Layout>
   )
-  // return (
-  //   <span>banana</span>
-  // )
 }
 
 export const query = graphql`
@@ -32,6 +26,11 @@ export const query = graphql`
           name
           price
           fieldGroupName
+          image {
+            id
+            gatsbyImageData
+            alt
+          }
         }
       }
     }
