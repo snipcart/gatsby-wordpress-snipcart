@@ -59,7 +59,7 @@ const data = {
   links: [
     {
       id: 0,
-      href: "#!",
+      href: "/products",
       text: "Products",
     },
   ],
@@ -90,8 +90,6 @@ export default function Footer(props) {
   return (
     <Box as="footer" paddingY={4}>
       <Container>
-        <script async src="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.js"></script>
-        <div hidden id="snipcart" data-api-key="process.env.SNIPCART_PUBLIC_API"></div>
         <Flex variant="start" responsive>
           <NavLink to="/">
             <VisuallyHidden>Home</VisuallyHidden>

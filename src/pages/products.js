@@ -9,6 +9,7 @@ export default function Products(props) {
   console.log(products)
   return (
     <Layout>
+    		<h1>Headless Art</h1>
       {products.nodes.map(({ product }) => {
         return <Product key={product.id} {...product} />
       })}

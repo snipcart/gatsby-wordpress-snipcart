@@ -30,8 +30,7 @@ const data = {
     },
   ],
   cta: {
-    href: "#!",
-    text: "Sign Up",
+    text: "View Cart",
   },
 }
 
@@ -86,7 +85,7 @@ export default function Header() {
             <Space />
             <div>
               {cta && (
-                <Button to={cta.href} variant={isOpen ? "reversed" : "primary"}>
+                <Button to={cta.href} variant={isOpen ? "reversed" : "primary"} class="snipcart-checkout">
                   {cta.text}
                 </Button>
               )}
