@@ -6,16 +6,17 @@ import {
 
 export default function Product(props) {
 	return (
-		<section>
+		<section style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
 			<h2>{props.name}</h2>
 			{props.image && (
 				<GatsbyImage
+					style={{ display: 'block', width: '50%' }}
 					alt={props.image.alt}
 					image={getImage(props.image)}
 				/>
 			)}
-			<p>{props.description}</p>
-			<p>{props.price}$</p>
+			<p style={{ width: '50%' }}>{props.description}</p>
+			<p style={{ width: '50%' }}>{props.price}$</p>
 			<Button
 				className="snipcart-add-item"
 				data-item-id={props.id}
