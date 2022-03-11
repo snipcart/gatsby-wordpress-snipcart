@@ -1,5 +1,8 @@
 import * as React from "react"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import {
+	Button,
+  } from "./ui"
 
 export default function Product(props) {
 	return (
@@ -12,15 +15,15 @@ export default function Product(props) {
 				/>
 			)}
 			<p>{props.description}</p>
-			<p>{props.price}</p>
-			<button
+			<p>{props.price}$</p>
+			<Button
 				className="snipcart-add-item"
 				data-item-id={props.id}
 				data-item-price={props.price}
 				data-item-description={props.description}
 				data-item-name={props.name}
 				data-item-image={props.image.gatsbyImageData.images.fallback.src}
-			>Add to cart</button>
+			>Add to cart</Button>
 		</section>
 	)
 }
