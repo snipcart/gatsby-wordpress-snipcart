@@ -22,9 +22,6 @@ export default function Head ({
       <meta name='twitter:title' content={title} />
       {description && <meta name='twitter:description' content={description} />}
       {image && <meta name='twitter:image' content={image.url} />}
-      <link rel="preconnect" href="https://app.snipcart.com" />
-      <link rel="preconnect" href="https://cdn.snipcart.com" />
-      <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css" />
     </Helmet>
   )
 }

@@ -65,7 +65,7 @@ export default function Header() {
                 ))}
             </FlexList>
           </nav>
-          <div>{cta && <Button to={cta.href}>{cta.text}</Button>}</div>
+          <Button className="snipcart-checkout">{cta.text}</Button>
         </Flex>
       </Container>
       <Container className={mobileHeaderNavWrapper[isOpen ? "open" : "closed"]}>
@@ -83,13 +83,9 @@ export default function Header() {
           </span>
           <Flex>
             <Space />
-            <div>
-              {cta && (
-                <Button to={cta.href} variant={isOpen ? "reversed" : "primary"} class="snipcart-checkout">
+                <Button variant={isOpen ? "reversed" : "primary"} className="snipcart-checkout">
                   {cta.text}
                 </Button>
-              )}
-            </div>
             <Nudge right={3}>
               <InteractiveIcon
                 title="Toggle menu"

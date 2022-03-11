@@ -13,6 +13,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-snipcart-advanced`,
+      options: {
+        version: "3.3.3",
+        publicApiKey: process.env.GATSBY_SNIPCART_API_KEY,
+        defaultLang: "en",
+        currency: "usd",
+        openCartOnAdd: true,
+        useSideCart: true,
+        templatesUrl: "https://cdn.snipcart.com/themes/v3.3.3/default/snipcart.css",
+      },
+    },
+    {
       resolve: "gatsby-source-wordpress",
       options: {
         url: process.env.WPGRAPHQL_URL,
