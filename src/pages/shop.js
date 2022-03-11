@@ -1,24 +1,25 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import * as sections from "../components/sections"
-import ShopItem from "../components/product"
+import Product from '../components/product'
 
-const Fallback = (props) => {
-  console.warn(`No component found for: ${props.blocktype}`)
-  return false
-}
 
 export default function Products(props) {
   const { products } = props.data
-
+  console.log(products)
   return (
     <Layout>
-      {products.nodes.forEach(product => {
-        return <button class="snipcart-add-item" data-id={product.id}>Add to cart</button>
+      {products.nodes.map(({ product }) => {
+        return <Product key={product.id} {...product} />
       })}
+      {/* {products.nodes.forEach(product => {
+        return <button class="snipcart-add-item" data-id={product.id}>Add to cart</button>
+      })} */}
     </Layout>
   )
+  // return (
+  //   <span>banana</span>
+  // )
 }
 
 export const query = graphql`
