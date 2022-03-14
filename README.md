@@ -1,14 +1,17 @@
-<a href="https://www.gatsbyjs.com">
-  <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-</a>
+What is Headless WordPress & Should You Use It?
+![What is Headless WordPress cover]()
 
-# Gatsby Starter WordPress Homepage
+This is a demo project using headless WordPress with Gatsby & Snipcart to create an e-commerce store.
+
+👀 Read the step-by-step tutorial [here](https://snipcart.com/blog/headless-wordpress)
+
+## Gatsby Starter WordPress Homepage
 
 Create a homepage using Gatsby and WordPress. This starter demonstrates how to use WordPress to build a homepage and can be customized to match your own visual branding.
 
 [View the Demo](https://gatsbywordpresshomepage.gatsbyjs.io/)
 
-## Quick start
+### Quick start
 
 You will need a new or existing WordPress instance to use this starter.
 This starter requires the following plugins to be installed in your WordPress instance:
@@ -53,7 +56,7 @@ Once these plugins are installed, you'll need the URL of the GraphQL endpoint fo
 
 1. **Open the source code and start editing**
 
-## Deploy your site
+### Deploy your site
 
 Once your content is available in WordPress, deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
 
@@ -68,21 +71,21 @@ For a more detailed walkthrough, see the tutorial on how to [build your site wit
 [gatsby cloud dashboard]: https://gatsbyjs.com/dashboard
 [tutorial]: https://www.gatsbyjs.com/docs/tutorial/part-1/#build-your-site-with-gatsby-cloud
 
-### Deploy without using the CLI
+#### Deploy without using the CLI
 
 Alternatively, you can deploy this starter directly to Gatsby Cloud.
 Note that you will need to set up your content in WordPress manually.
 
 [![Deploy to Gatsby](https://www.gatsbyjs.com/deploynow.png "Deploy to Gatsby")](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-wordpress-homepage)
 
-## Setting up Gatsby Cloud Preview
+### Setting up Gatsby Cloud Preview
 
 To use Gatsby Cloud Preview with this site, see the documentation for
 [Setting up Preview with WPGatsby][].
 
 [setting up preview with wpgatsby]: https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/tutorials/configuring-wp-gatsby.md#setting-up-preview
 
-## What's included?
+### What's included?
 
 ```sh
 ├── README.md
@@ -105,9 +108,9 @@ To use Gatsby Cloud Preview with this site, see the documentation for
 [gatsby node]: https://www.gatsbyjs.com/docs/reference/config-files/gatsby-node/
 [vanilla extract]: https://vanilla-extract.style/
 
-## How to
+### How to
 
-### Update the color theme
+#### Update the color theme
 
 To update the colors used in this starter, edit the `src/colors.css.ts` file.
 
@@ -129,7 +132,7 @@ This file is imported into `src/theme.css.ts` and creates CSS custom properties,
 
 The UI components file `src/components/ui.js` imports styles from `src/components/ui.css.ts`. You can see how the theme and color values are being used in this file.
 
-### Add your logo
+#### Add your logo
 
 ![Logo](./docs/images/logo.png)
 
@@ -140,18 +143,18 @@ Using an inline SVG for the logo allows it to pick up the colors used in CSS, wh
 
 If you prefer to use an image, use the [`StaticImage`](https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-plugin-image/#staticimage) component from `gatsby-plugin-image` in place of the SVG in this file.
 
-### Customize headings, buttons, and other styles
+#### Customize headings, buttons, and other styles
 
 ![Headings & Buttons](./docs/images/headings-buttons.png)
 
 To further customize the look and feel of the homepage, edit the UI components in `src/components/ui.js` and styles in `src/components/ui.css.ts`.
 
-### Customize section components
+#### Customize section components
 
 To customize any of the sections of the homepage, edit the relevant component in `src/components`.
 Most of the styles for these components are handled with shared UI components in `src/components/ui.js`.
 
-### Create custom section components
+#### Create custom section components
 
 To create a new type of section in your homepage, you'll want to create a new section component. Using the existing components as an example.
 For this example, we'll create a new "Banner" component.
@@ -329,18 +332,3 @@ For this example, we'll create a new "Banner" component.
      }
    `
    ```
-
----
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.com/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.com/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.com/docs/).**
-
-## 💫 Deploy
-
-[Build, Deploy, and Host On The Only Cloud Built For Gatsby](https://www.gatsbyjs.com/cloud/)
-
-Gatsby Cloud is an end-to-end cloud platform specifically built for the Gatsby framework that combines a modern developer experience with an optimized, global edge network.
