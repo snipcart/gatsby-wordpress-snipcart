@@ -1,4 +1,5 @@
-What is Headless WordPress & Should You Use It?
+# What is Headless WordPress & Should You Use It?
+
 ![What is Headless WordPress cover]()
 
 This is a demo project using headless WordPress with Gatsby & Snipcart to create an e-commerce store.
