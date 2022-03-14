@@ -57,35 +57,6 @@ Once these plugins are installed, you'll need the URL of the GraphQL endpoint fo
 
 1. **Open the source code and start editing**
 
-### Deploy your site
-
-Once your content is available in WordPress, deploy your site to [Gatsby Cloud](https://gatsbyjs.com/products/cloud):
-
-1. Push your local site to a new repo in either GitHub, GitLab, or Bitbucket
-1. Log into your [Gatsby Cloud Dashboard][] and click on **Add a site**
-1. Use the **Import from a Git repository** option to find your site
-1. Add the environment variables from your `.env.production` file to Gatsby Cloud during setup
-1. Click **Build site** and your site should start building
-
-For a more detailed walkthrough, see the tutorial on how to [build your site with Gatsby Cloud][tutorial].
-
-[gatsby cloud dashboard]: https://gatsbyjs.com/dashboard
-[tutorial]: https://www.gatsbyjs.com/docs/tutorial/part-1/#build-your-site-with-gatsby-cloud
-
-#### Deploy without using the CLI
-
-Alternatively, you can deploy this starter directly to Gatsby Cloud.
-Note that you will need to set up your content in WordPress manually.
-
-[![Deploy to Gatsby](https://www.gatsbyjs.com/deploynow.png "Deploy to Gatsby")](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-wordpress-homepage)
-
-### Setting up Gatsby Cloud Preview
-
-To use Gatsby Cloud Preview with this site, see the documentation for
-[Setting up Preview with WPGatsby][].
-
-[setting up preview with wpgatsby]: https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-wordpress/docs/tutorials/configuring-wp-gatsby.md#setting-up-preview
-
 ### What's included?
 
 ```sh
