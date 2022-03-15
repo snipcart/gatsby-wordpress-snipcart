@@ -1,6 +1,6 @@
 # What is Headless WordPress & Should You Use It?
 
-![What is Headless WordPress cover]()
+![What is Headless WordPress cover](https://www.datocms-assets.com/48401/1647311963-headless-wordpress-og.png)
 
 This is a demo project using headless WordPress with Gatsby & Snipcart to create an e-commerce store.
 
